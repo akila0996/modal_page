@@ -49,7 +49,7 @@ a:hover {
   border: solid 2px;
   padding: 20px;
   position: relative;
-  box-shadow: 10px 20px 40;
+  border-radius: 20px;
 }
 .modal button{
   border: none;
