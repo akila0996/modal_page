@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Page</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+    <!-----------HEADER SECTION--------------->
+    <header>
+        <div class="navbar">
+            <a href="#home" onclick="showModal()">Home</a>
+            <a href="#our products" onclick="showModal()">Our products</a>
+            <a href="#careers" onclick="showModal()">Careers</a>
+            <a href="#about us" onclick="showModal()">About us</a>
+            <a href="#contact us" onclick="showModal()">contact us</a>
+
+            <div class="search-container">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+          </div>
+           
+    </header>
+
+    <div class="modal-wrapper" id="model1">
+        <div class="modal">
+            <h1>OOPS! <button onclick="closeModal()">&times;</button></h1>
+            <h2> 404-page not found</h2>
+            <p>The page you are looking for might have been removed <br>
+            had its name changed or is temporarily unavailable.</p>
+        </div>
+
+      </div>      
+    <script>
+         function showModal(){
+            document.getElementById("model1").style.display="block"
+         }
+
+         function closeModal(){
+            document.getElementById("model1").style.display="none"
+         }
+    </script>
+</body>
+</html>
